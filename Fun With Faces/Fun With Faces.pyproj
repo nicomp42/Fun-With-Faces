@@ -1,0 +1,89 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1454bc88-2dae-4ba9-aad1-ff176916c584</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>mainPackage\main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Fun With Faces</Name>
+    <RootNamespace>Fun With OpenCV</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="mainPackage\main.py" />
+    <Compile Include="mainPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="openCVPackage\fun_with_faces.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="openCVPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utilsPackage\utils.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utilsPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Images\Crowd\" />
+    <Folder Include="Images\Random Head Shots\" />
+    <Folder Include="Images\Us\" />
+    <Folder Include="mainPackage\" />
+    <Folder Include="openCVPackage\" />
+    <Folder Include="utilsPackage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Crowd\crowd.jpg" />
+    <Content Include="Images\Crowd\random person in crowd.jpg" />
+    <Content Include="Images\Crowd\random person in crowd1.jpg" />
+    <Content Include="Images\Random Head Shots\Faces.bmp" />
+    <Content Include="Images\Random Head Shots\Faces1.bmp" />
+    <Content Include="Images\Random Head Shots\Faces1.jpg" />
+    <Content Include="Images\Random Head Shots\Faces2.bmp" />
+    <Content Include="Images\Random Head Shots\Faces3.bmp" />
+    <Content Include="Images\Random Head Shots\Known_face - Joe Burrow.jpg" />
+    <Content Include="Images\Random Head Shots\known_face - John Bonham.jpg" />
+    <Content Include="Images\Random Head Shots\known_face - John Bonham1.bmp" />
+    <Content Include="Images\Random Head Shots\known_face - John Bonham1.jpg" />
+    <Content Include="Images\Random Head Shots\known_face - John Lennon.jpg" />
+    <Content Include="Images\Random Head Shots\Known_face - Josh Allen.jpg" />
+    <Content Include="Images\Random Head Shots\known_face - Josh Allen1.jpg" />
+    <Content Include="Images\Random Head Shots\known_face - Josh Allen2.jpg" />
+    <Content Include="Images\Random Head Shots\Known_face - Josh Allen3.jpg" />
+    <Content Include="Images\Random Head Shots\known_face - Robert Plant.jpg" />
+    <Content Include="Images\Random Head Shots\random person.jpg" />
+    <Content Include="Images\Random Head Shots\random person1.jpg" />
+    <Content Include="Images\Random Head Shots\single-person.jpg" />
+    <Content Include="Images\Random Head Shots\Some Bengal.jpg" />
+    <Content Include="Images\Random Head Shots\Some Bill.jpg" />
+    <Content Include="Images\Us\random person.jpg" />
+    <Content Include="Images\Us\random person1.jpg" />
+    <Content Include="Images\Us\Sally.jpg" />
+    <Content Include="Images\Us\us.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
