@@ -73,6 +73,9 @@
     <Content Include="Images\Random Head Shots\Some Bengal.jpg" />
     <Content Include="Images\Random Head Shots\Some Bill.jpg" />
     <Content Include="Images\Us\ben.jpg" />
+    <Content Include="Images\Us\Heitor.jpg" />
+    <Content Include="Images\Us\Aryan.jpg" />
+    <Content Include="Images\Us\Dobry.jpg" />
     <Content Include="Images\Us\random person.jpg" />
     <Content Include="Images\Us\random person1.jpg" />
     <Content Include="Images\Us\Sally.jpg" />
