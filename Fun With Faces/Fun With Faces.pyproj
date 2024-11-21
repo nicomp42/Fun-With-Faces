@@ -76,6 +76,7 @@
     <Content Include="Images\Us\random person1.jpg" />
     <Content Include="Images\Us\Sally.jpg" />
     <Content Include="Images\Us\us.jpg" />
+    <Content Include="Images\Us\jacob.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
